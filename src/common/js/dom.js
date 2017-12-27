@@ -2,7 +2,7 @@ export function addClass(el, className) {
   if (hasClass(el, className)) {  // 如果有这个className就return
     return
   }
-  console.log(hasClass(el, className))
+  // console.log(hasClass(el, className))
   let newClass = el.className.split(' ') // 把className拆开
   newClass.push(className)
   el.className = newClass.join(' ') // 再连起来
